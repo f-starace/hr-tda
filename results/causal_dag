@@ -1,0 +1,48 @@
+// Sleep Causal DAG
+digraph {
+	rankdir=LR
+	age [fillcolor=lightblue shape=ellipse style=filled]
+	cluster [fillcolor=lightblue shape=ellipse style=filled]
+	patient_chronotype [fillcolor=lightblue shape=ellipse style=filled]
+	nadir_time_pct [fillcolor=lightblue shape=ellipse style=filled]
+	se [fillcolor=lightblue shape=ellipse style=filled]
+	sex [fillcolor=lightblue shape=ellipse style=filled]
+	chronotype_desync [fillcolor=lightblue shape=ellipse style=filled]
+	abs_chronotype_desync [fillcolor=lightblue shape=ellipse style=filled]
+	nadir_hr [fillcolor=lightblue shape=ellipse style=filled]
+	waso [fillcolor=lightblue shape=ellipse style=filled]
+	sfi [fillcolor=lightblue shape=ellipse style=filled]
+	episode_hr_mean [fillcolor=lightblue shape=ellipse style=filled]
+	sri [fillcolor=lightblue shape=ellipse style=filled]
+	age -> cluster
+	age -> patient_chronotype
+	age -> nadir_time_pct
+	age -> se
+	patient_chronotype -> cluster
+	patient_chronotype -> chronotype_desync
+	patient_chronotype -> abs_chronotype_desync
+	patient_chronotype -> nadir_time_pct
+	nadir_time_pct -> cluster
+	se -> cluster
+	sex -> cluster
+	sex -> patient_chronotype
+	sex -> nadir_time_pct
+	chronotype_desync -> cluster
+	chronotype_desync -> se
+	abs_chronotype_desync -> cluster
+	abs_chronotype_desync -> se
+	nadir_hr -> cluster
+	waso -> cluster
+	waso -> se
+	waso -> sfi
+	sfi -> cluster
+	sfi -> se
+	episode_hr_mean -> cluster
+	episode_hr_mean -> nadir_hr
+	sri -> cluster
+	sri -> patient_chronotype
+	sri -> chronotype_desync
+	sri -> abs_chronotype_desync
+	sri -> se
+	sri -> nadir_time_pct
+}

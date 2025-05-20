@@ -1,0 +1,16 @@
+equalize_method: resample
+eps: 0.4
+min_samples: 5
+nadir_weight: 1.0
+use_causal: True
+causal_exposure: None
+prior_type: student_t
+prior_scale: 2.0
+compare_fudolig: True
+clustering_algorithm: tda_nadir_umap_kmeans_3
+cv_method: loo
+min_clusters: 2
+max_clusters: 10
+favor_higher_k: True
+penalty_weight: 0.05
+reduced_mcmc: False

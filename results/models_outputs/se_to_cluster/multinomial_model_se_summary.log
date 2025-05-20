@@ -1,0 +1,32 @@
+Target relationship: se -> cluster
+Bayesian model on 5040 episodes, K = 3
+Outcome 'cluster' has 3 categories
+Formula: cluster ~ abs_chronotype_desync + age + chronotype_desync + se + sfi + sri + waso + (1|id)
+After dropping NAs, dataset has 5017 rows
+Standardizing numeric predictor columns: ['abs_chronotype_desync', 'age', 'chronotype_desync', 'se', 'sfi', 'sri', 'waso']
+Scaling parameters:
+                            mean      scale
+abs_chronotype_desync   0.755237   0.833151
+age                    46.427347  15.064315
+chronotype_desync      -0.001037   1.124510
+se                     81.231302  14.441248
+sfi                     1.118286   0.661328
+sri                    71.662998  14.441979
+waso                   87.773769  65.473660
+Dropping array columns: ['hr_vector', 'hr_vector_times', 'slope', 'tda_vec', 'hr_eq']
+Setting up model priors...
+Initializing Bambi model...
+Model initialized with formula: Formula(cluster ~ abs_chronotype_desync + age + chronotype_desync + se + sfi + sri + waso + (1|id))
+Starting MCMC with 4 chains, 1000 tuning steps, 2000 draws
+Initializing NUTS using adapt_diag...
+MCMC sampling completed
+Saved scaling parameters to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/models_outputs/se_to_cluster/multinomial_model_se_summary_scaling.csv
+Assessing significance of 'se' in cluster prediction
+Available posterior variables: ['Intercept', 'abs_chronotype_desync', 'age', 'chronotype_desync', 'se', 'sfi', 'sri', 'waso', '1|id_sigma', '1|id']
+Found 1 coefficients related to se: ['se']
+Coefficient se: mean=-0.1448, 95% HDI=[-0.3264, 0.0390], P(effect != 0)=93.92% - not significant
+Divergences per chain: [0 0 0 0] (total: 0)
+Saved model summary to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/models_outputs/se_to_cluster/multinomial_model_se_summary.txt
+Skipping PPC plot: 'posterior_predictive' not in inference data
+Saved parameter trace plot to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/models_outputs/se_to_cluster/multinomial_model_se_summary_trace.png
+Saved target parameter trace plot to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/models_outputs/se_to_cluster/multinomial_model_se_summary_target_trace.png

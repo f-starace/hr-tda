@@ -1,0 +1,13 @@
+Significant Findings for Clusters:
+==================================================
+
+1. Top features distinguishing clusters: episode_hr_mean (0.116), nadir_hr (0.109), sfi (0.107)
+2. age differs significantly between clusters (F=9.370, p=0.000)
+3. patient_chronotype differs significantly between clusters (F=7.240, p=0.001)
+4. abs_chronotype_desync differs significantly between clusters (F=9.242, p=0.000)
+5. waso differs significantly between clusters (F=4.712, p=0.009)
+6. duration_secs differs significantly between clusters (F=16.038, p=0.000)
+7. episode_hr_mean differs significantly between clusters (F=70.054, p=0.000)
+8. nadir_hr differs significantly between clusters (F=95.734, p=0.000)
+9. chronotype_cont differs significantly between clusters (F=9.376, p=0.000)
+10. Sex distribution differs significantly across clusters (p=0.000)

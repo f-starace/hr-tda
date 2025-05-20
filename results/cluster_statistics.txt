@@ -1,0 +1,164 @@
+Statistical comparison of clusters (cluster)
+==================================================
+
+Post-hoc Dunn test for age:
+          0         1         2
+0  1.000000  0.001976  0.000016
+1  0.001976  1.000000  0.127646
+2  0.000016  0.127646  1.000000
+
+ANOVA for age:
+F-statistic: 9.370, p-value: 0.00009
+Significant difference in age between clusters
+
+Means by cluster:
+   cluster       mean        std
+0        0  47.494044  15.655715
+1        1  46.254290  14.278460
+2        2  45.157312  15.292359
+Saved boxplot to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/age_by_cluster_boxplot.png
+
+Post-hoc Dunn test for patient_chronotype:
+          0         1         2
+0  1.000000  0.039841  0.000006
+1  0.039841  1.000000  0.007096
+2  0.000006  0.007096  1.000000
+
+ANOVA for patient_chronotype:
+F-statistic: 7.240, p-value: 0.00072
+Significant difference in patient_chronotype between clusters
+
+Means by cluster:
+   cluster      mean       std
+0        0  9.610619  1.106658
+1        1  9.680760  1.119260
+2        2  9.762687  1.087907
+Saved boxplot to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/patient_chronotype_by_cluster_boxplot.png
+
+ANOVA for se:
+F-statistic: 0.124, p-value: 0.88357
+Saved boxplot to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/se_by_cluster_boxplot.png
+
+Post-hoc Dunn test for waso:
+          0         1         2
+0  1.000000  0.000037  0.000518
+1  0.000037  1.000000  0.763550
+2  0.000518  0.763550  1.000000
+
+ANOVA for waso:
+F-statistic: 4.712, p-value: 0.00903
+Significant difference in waso between clusters
+
+Means by cluster:
+   cluster       mean        std
+0        0  91.815655  63.320120
+1        1  85.727509  66.811090
+2        2  86.110783  66.387435
+Saved boxplot to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/waso_by_cluster_boxplot.png
+
+Post-hoc Dunn test for sfi:
+              0             1         2
+0  1.000000e+00  5.436857e-18  0.000004
+1  5.436857e-18  1.000000e+00  0.000869
+2  3.867529e-06  8.692204e-04  1.000000
+
+ANOVA for sfi:
+F-statistic: 43.137, p-value: 0.00000
+Significant difference in sfi between clusters
+
+Means by cluster:
+   cluster      mean       std
+0        0  1.011611  0.588473
+1        1  1.212101  0.702169
+2        2  1.128213  0.670919
+Saved boxplot to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/sfi_by_cluster_boxplot.png
+
+Post-hoc Dunn test for sri:
+              0             1         2
+0  1.000000e+00  4.204806e-07  0.071961
+1  4.204806e-07  1.000000e+00  0.004164
+2  7.196073e-02  4.164201e-03  1.000000
+
+ANOVA for sri:
+F-statistic: 13.359, p-value: 0.00000
+Significant difference in sri between clusters
+
+Means by cluster:
+   cluster       mean        std
+0        0  70.424338  14.997997
+1        1  72.879481  14.005709
+2        2  71.550892  14.183630
+Saved boxplot to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/sri_by_cluster_boxplot.png
+
+Post-hoc Dunn test for nadir_time_pct:
+               0             1              2
+0   1.000000e+00  3.282125e-41  1.005442e-279
+1   3.282125e-41  1.000000e+00   0.000000e+00
+2  1.005442e-279  0.000000e+00   1.000000e+00
+
+ANOVA for nadir_time_pct:
+F-statistic: 2896.631, p-value: 0.00000
+Significant difference in nadir_time_pct between clusters
+
+Means by cluster:
+   cluster      mean       std
+0        0  0.696551  0.236998
+1        1  0.814662  0.127779
+2        2  0.307238  0.203223
+Saved boxplot to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/nadir_time_pct_by_cluster_boxplot.png
+
+Post-hoc Dunn test for nadir_hr:
+              0             1             2
+0  1.000000e+00  2.229601e-43  4.650909e-15
+1  2.229601e-43  1.000000e+00  1.211860e-06
+2  4.650909e-15  1.211860e-06  1.000000e+00
+
+ANOVA for nadir_hr:
+F-statistic: 95.734, p-value: 0.00000
+Significant difference in nadir_hr between clusters
+
+Means by cluster:
+   cluster       mean       std
+0        0  51.794162  6.584133
+1        1  54.692898  6.089313
+2        2  53.570454  6.517867
+Saved boxplot to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/nadir_hr_by_cluster_boxplot.png
+
+Post-hoc Dunn test for episode_hr_mean:
+              0             1             2
+0  1.000000e+00  2.536968e-32  2.096080e-07
+1  2.536968e-32  1.000000e+00  1.103281e-08
+2  2.096080e-07  1.103281e-08  1.000000e+00
+
+ANOVA for episode_hr_mean:
+F-statistic: 70.054, p-value: 0.00000
+Significant difference in episode_hr_mean between clusters
+
+Means by cluster:
+   cluster       mean       std
+0        0  60.200275  7.028803
+1        1  62.824304  6.477788
+2        2  61.446239  6.687930
+Saved boxplot to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/episode_hr_mean_by_cluster_boxplot.png
+
+ANOVA for chronotype_desync:
+F-statistic: 2.770, p-value: 0.06278
+Saved boxplot to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/chronotype_desync_by_cluster_boxplot.png
+
+Chi-square test for sex:
+Chi2 = 60.026, p-value: 0.00000, dof: 2
+Significant association between sex and cluster
+
+Contingency table:
+sex         F    M
+cluster           
+0         836  927
+1        1128  795
+2         799  555
+
+Proportions (%):
+sex              F          M
+cluster                      
+0        47.419172  52.580828
+1        58.658346  41.341654
+2        59.010340  40.989660

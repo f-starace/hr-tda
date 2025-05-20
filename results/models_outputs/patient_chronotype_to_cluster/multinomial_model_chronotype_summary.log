@@ -1,0 +1,28 @@
+Target relationship: patient_chronotype -> cluster
+Bayesian model on 5040 episodes, K = 3
+Outcome 'cluster' has 3 categories
+Formula: cluster ~ age + patient_chronotype + sex + sri + (1|id)
+After dropping NAs, dataset has 5017 rows
+Standardizing numeric predictor columns: ['age', 'patient_chronotype', 'sri']
+Scaling parameters:
+                         mean      scale
+age                 46.427347  15.064315
+patient_chronotype   9.675248   1.106635
+sri                 71.662998  14.441979
+Dropping array columns: ['hr_vector', 'hr_vector_times', 'slope', 'tda_vec', 'hr_eq']
+Setting up model priors...
+Initializing Bambi model...
+Model initialized with formula: Formula(cluster ~ age + patient_chronotype + sex + sri + (1|id))
+Starting MCMC with 4 chains, 1000 tuning steps, 2000 draws
+Initializing NUTS using adapt_diag...
+MCMC sampling completed
+Saved scaling parameters to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/models_outputs/patient_chronotype_to_cluster/multinomial_model_chronotype_summary_scaling.csv
+Assessing significance of 'patient_chronotype' in cluster prediction
+Available posterior variables: ['Intercept', 'age', 'patient_chronotype', 'sex', 'sri', '1|id_sigma', '1|id']
+Found 1 coefficients related to patient_chronotype: ['patient_chronotype']
+Coefficient patient_chronotype: mean=0.1434, 95% HDI=[0.0373, 0.2527], P(effect != 0)=99.64% - SIGNIFICANT
+Divergences per chain: [0 0 0 0] (total: 0)
+Saved model summary to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/models_outputs/patient_chronotype_to_cluster/multinomial_model_chronotype_summary.txt
+Skipping PPC plot: 'posterior_predictive' not in inference data
+Saved parameter trace plot to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/models_outputs/patient_chronotype_to_cluster/multinomial_model_chronotype_summary_trace.png
+Saved target parameter trace plot to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/models_outputs/patient_chronotype_to_cluster/multinomial_model_chronotype_summary_target_trace.png

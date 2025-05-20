@@ -1,0 +1,12 @@
+Target relationship: age -> cluster
+Model Formula: cluster ~ age + sex + (1|id)
+
+Significance Analysis with 95% HDI
+==================================================
+
+Coefficient age:
+  Mean effect: -0.1403
+  95% HDI: [-0.2579, -0.0274]
+  P(effect != 0): 99.40%
+  Conclusion: SIGNIFICANT
+

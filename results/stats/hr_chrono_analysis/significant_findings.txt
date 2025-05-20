@@ -1,0 +1,18 @@
+Significant Findings for HR, Chronotype, and Sleep Indices Analysis:
+======================================================================
+
+1. Significant correlation between nadir_time_pct and episode_hr_mean: r=0.056, p=0.0001, n=5040
+2. Significant correlation between nadir_time_pct and chronotype_desync: r=-0.059, p=0.0000, n=5040
+3. Significant correlation between nadir_time_pct and abs_chronotype_desync: r=-0.032, p=0.0219, n=5040
+4. Significant correlation between nadir_time_pct and nadir_hr: r=0.031, p=0.0284, n=5040
+5. Significant correlation between episode_hr_mean and chronotype_desync: r=0.075, p=0.0000, n=5040
+6. Significant correlation between episode_hr_mean and abs_chronotype_desync: r=0.116, p=0.0000, n=5040
+7. Significant correlation between episode_hr_mean and nadir_hr: r=0.905, p=0.0000, n=5040
+8. Significant correlation between episode_hr_mean and patient_chronotype: r=0.043, p=0.0021, n=5040
+9. Significant correlation between chronotype_desync and abs_chronotype_desync: r=0.281, p=0.0000, n=5040
+10. Significant correlation between chronotype_desync and nadir_hr: r=0.078, p=0.0000, n=5040
+11. Significant correlation between abs_chronotype_desync and nadir_hr: r=0.057, p=0.0000, n=5040
+12. Significant correlation between abs_chronotype_desync and patient_chronotype: r=0.194, p=0.0000, n=5040
+13. Sleep index activity_idx is significantly correlated with nadir timing: r=-0.049, p=0.0005
+14. HR metric nadir_hr differs significantly between clusters: F=95.734, p=0.0000
+15. HR metric episode_hr_mean differs significantly between clusters: F=70.054, p=0.0000

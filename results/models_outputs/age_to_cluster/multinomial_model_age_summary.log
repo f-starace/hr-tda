@@ -1,0 +1,39 @@
+Target relationship: age -> cluster
+Bayesian model on 5040 episodes, K = 3
+Outcome 'cluster' has 3 categories
+Formula: cluster ~ age + sex + (1|id)
+After dropping NAs, dataset has 5040 rows
+Standardizing numeric predictor columns: ['age']
+Scaling parameters:
+          mean      scale
+age  46.393254  15.068393
+Dropping array columns: ['hr_vector', 'hr_vector_times', 'slope', 'tda_vec', 'hr_eq']
+Setting up model priors...
+Initializing Bambi model...
+Model initialized with formula: Formula(cluster ~ age + sex + (1|id))
+Starting MCMC with 4 chains, 1000 tuning steps, 2000 draws
+Initializing NUTS using adapt_diag...
+!!! Model fitting failed for formula 'cluster ~ age + sex + (1|id)': Not enough samples to build a trace.
+Traceback (most recent call last):
+  File "/Users/federicostarace/thesis/sleep_analysis/models.py", line 428, in multinomial_mixed_model
+    idata = m.fit(
+            ^^^^^^
+  File "/Users/federicostarace/thesis/.venv/lib/python3.11/site-packages/bambi/models.py", line 348, in fit
+    return self.backend.run(
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/federicostarace/thesis/.venv/lib/python3.11/site-packages/bambi/backend/pymc.py", line 136, in run
+    result = self._run_mcmc(
+             ^^^^^^^^^^^^^^^
+  File "/Users/federicostarace/thesis/.venv/lib/python3.11/site-packages/bambi/backend/pymc.py", line 214, in _run_mcmc
+    idata = pm.sample(
+            ^^^^^^^^^^
+  File "/Users/federicostarace/thesis/.venv/lib/python3.11/site-packages/pymc/sampling/mcmc.py", line 964, in sample
+    return _sample_return(
+           ^^^^^^^^^^^^^^^
+  File "/Users/federicostarace/thesis/.venv/lib/python3.11/site-packages/pymc/sampling/mcmc.py", line 1049, in _sample_return
+    traces, length = _choose_chains(traces, tune)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/federicostarace/thesis/.venv/lib/python3.11/site-packages/pymc/backends/base.py", line 624, in _choose_chains
+    raise ValueError("Not enough samples to build a trace.")
+ValueError: Not enough samples to build a trace.
+

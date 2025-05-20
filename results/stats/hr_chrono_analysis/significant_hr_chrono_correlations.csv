@@ -1,0 +1,13 @@
+variable1,variable2,correlation,p_value,n
+nadir_time_pct,episode_hr_mean,0.05550430412062961,8.064455138967475e-05,5040
+nadir_time_pct,chronotype_desync,-0.058509183155654676,3.2348505754953294e-05,5040
+nadir_time_pct,abs_chronotype_desync,-0.032294413263901874,0.0218649833025939,5040
+nadir_time_pct,nadir_hr,0.030872751431670894,0.02839924813047956,5040
+episode_hr_mean,chronotype_desync,0.07521321278744805,8.999023437539222e-08,5040
+episode_hr_mean,abs_chronotype_desync,0.11631788939715726,0.0,5040
+episode_hr_mean,nadir_hr,0.9052779851991628,0.0,5040
+episode_hr_mean,patient_chronotype,0.04328847288472195,0.002113119281389686,5040
+chronotype_desync,abs_chronotype_desync,0.2809633024372049,0.0,5040
+chronotype_desync,nadir_hr,0.07759904602732835,3.469250020593506e-08,5040
+abs_chronotype_desync,nadir_hr,0.0571943966695381,4.850462842020953e-05,5040
+abs_chronotype_desync,patient_chronotype,0.1938976345960079,0.0,5040

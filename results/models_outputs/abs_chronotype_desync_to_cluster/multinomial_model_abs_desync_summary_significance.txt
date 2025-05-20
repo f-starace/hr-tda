@@ -1,0 +1,12 @@
+Target relationship: abs_chronotype_desync -> cluster
+Model Formula: cluster ~ abs_chronotype_desync + age + patient_chronotype + sex + sri + (1|id)
+
+Significance Analysis with 95% HDI
+==================================================
+
+Coefficient abs_chronotype_desync:
+  Mean effect: -0.0921
+  95% HDI: [-0.2054, 0.0176]
+  P(effect != 0): 94.54%
+  Conclusion: not significant
+

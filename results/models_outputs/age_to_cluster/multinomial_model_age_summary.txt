@@ -1,0 +1,28 @@
+Target relationship: age -> cluster
+Model Formula: cluster ~ age + sex + (1|id)
+
+ERROR during model fitting: Not enough samples to build a trace.
+
+Detailed traceback:
+Traceback (most recent call last):
+  File "/Users/federicostarace/thesis/sleep_analysis/models.py", line 428, in multinomial_mixed_model
+    idata = m.fit(
+            ^^^^^^
+  File "/Users/federicostarace/thesis/.venv/lib/python3.11/site-packages/bambi/models.py", line 348, in fit
+    return self.backend.run(
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/federicostarace/thesis/.venv/lib/python3.11/site-packages/bambi/backend/pymc.py", line 136, in run
+    result = self._run_mcmc(
+             ^^^^^^^^^^^^^^^
+  File "/Users/federicostarace/thesis/.venv/lib/python3.11/site-packages/bambi/backend/pymc.py", line 214, in _run_mcmc
+    idata = pm.sample(
+            ^^^^^^^^^^
+  File "/Users/federicostarace/thesis/.venv/lib/python3.11/site-packages/pymc/sampling/mcmc.py", line 964, in sample
+    return _sample_return(
+           ^^^^^^^^^^^^^^^
+  File "/Users/federicostarace/thesis/.venv/lib/python3.11/site-packages/pymc/sampling/mcmc.py", line 1049, in _sample_return
+    traces, length = _choose_chains(traces, tune)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/federicostarace/thesis/.venv/lib/python3.11/site-packages/pymc/backends/base.py", line 624, in _choose_chains
+    raise ValueError("Not enough samples to build a trace.")
+ValueError: Not enough samples to build a trace.

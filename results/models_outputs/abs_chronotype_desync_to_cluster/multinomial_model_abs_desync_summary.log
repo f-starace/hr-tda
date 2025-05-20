@@ -1,0 +1,29 @@
+Target relationship: abs_chronotype_desync -> cluster
+Bayesian model on 5040 episodes, K = 3
+Outcome 'cluster' has 3 categories
+Formula: cluster ~ abs_chronotype_desync + age + patient_chronotype + sex + sri + (1|id)
+After dropping NAs, dataset has 5017 rows
+Standardizing numeric predictor columns: ['abs_chronotype_desync', 'age', 'patient_chronotype', 'sri']
+Scaling parameters:
+                            mean      scale
+abs_chronotype_desync   0.755237   0.833151
+age                    46.427347  15.064315
+patient_chronotype      9.675248   1.106635
+sri                    71.662998  14.441979
+Dropping array columns: ['hr_vector', 'hr_vector_times', 'slope', 'tda_vec', 'hr_eq']
+Setting up model priors...
+Initializing Bambi model...
+Model initialized with formula: Formula(cluster ~ abs_chronotype_desync + age + patient_chronotype + sex + sri + (1|id))
+Starting MCMC with 4 chains, 1000 tuning steps, 2000 draws
+Initializing NUTS using adapt_diag...
+MCMC sampling completed
+Saved scaling parameters to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/models_outputs/abs_chronotype_desync_to_cluster/multinomial_model_abs_desync_summary_scaling.csv
+Assessing significance of 'abs_chronotype_desync' in cluster prediction
+Available posterior variables: ['Intercept', 'abs_chronotype_desync', 'age', 'patient_chronotype', 'sex', 'sri', '1|id_sigma', '1|id']
+Found 1 coefficients related to abs_chronotype_desync: ['abs_chronotype_desync']
+Coefficient abs_chronotype_desync: mean=-0.0921, 95% HDI=[-0.2054, 0.0176], P(effect != 0)=94.54% - not significant
+Divergences per chain: [0 0 0 0] (total: 0)
+Saved model summary to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/models_outputs/abs_chronotype_desync_to_cluster/multinomial_model_abs_desync_summary.txt
+Skipping PPC plot: 'posterior_predictive' not in inference data
+Saved parameter trace plot to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/models_outputs/abs_chronotype_desync_to_cluster/multinomial_model_abs_desync_summary_trace.png
+Saved target parameter trace plot to results/eq_resample_clust_tda_nadir_umap_kmeans_3_nw_1.0_k_2-10/models_outputs/abs_chronotype_desync_to_cluster/multinomial_model_abs_desync_summary_target_trace.png

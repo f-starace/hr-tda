@@ -1,0 +1,5 @@
+Cluster Validation Metrics:
+Number of clusters: 3
+Silhouette Score: 0.417 (higher is better, range [-1, 1])
+Calinski-Harabasz Score: 4899.196 (higher is better)
+Davies-Bouldin Score: 0.830 (lower is better)

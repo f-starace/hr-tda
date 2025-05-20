@@ -1,0 +1,3 @@
+hr_metric,f_statistic,p_value,significant
+nadir_hr,95.7341977536465,1.5628318682300807e-41,True
+episode_hr_mean,70.05383455142093,9.805103349335364e-31,True

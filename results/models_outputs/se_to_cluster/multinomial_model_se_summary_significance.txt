@@ -1,0 +1,12 @@
+Target relationship: se -> cluster
+Model Formula: cluster ~ abs_chronotype_desync + age + chronotype_desync + se + sfi + sri + waso + (1|id)
+
+Significance Analysis with 95% HDI
+==================================================
+
+Coefficient se:
+  Mean effect: -0.1448
+  95% HDI: [-0.3264, 0.0390]
+  P(effect != 0): 93.92%
+  Conclusion: not significant
+
